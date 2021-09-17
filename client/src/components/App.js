@@ -1,12 +1,13 @@
 import { Link, Route, Switch } from "react-router-dom";
 import Camper from "./Camper";
 import Home from "./Home";
+import "./App.css";
 
 function App() {
   return (
-    <main>
+    <div className="App">
       <h1>
-        <Link to="/">Camping Fun</Link>
+        <Link to="/">Camping Fun</Link><br />
       </h1>
       <Switch>
         <Route exact path="/">
@@ -16,7 +17,7 @@ function App() {
           <Camper />
         </Route>
       </Switch>
-    </main>
+    </div>
   );
 }
 
